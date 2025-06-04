@@ -33,6 +33,8 @@ import drop_left from './model/drop_down/drop_left.vue';
 import slide_img from './model/slide_box/slide_img.vue';
 import progress_bar from './model/media/progress_bar.vue';
 import heat_map from './model/media/heat_map.vue';
+import video_info from './model/media/video_info.vue'
+import AnimatedList from './model/drop_down/AnimatedList.vue';
 
 const now_component = shallowRef(null);
 
@@ -59,6 +61,10 @@ const menu_item = [
       {
         name:'侧边栏',
         component: markRaw(drop_left)
+      },
+      {
+        name:'逐级展开列表',
+        component:markRaw(AnimatedList)
       }
     ]
   },
@@ -74,8 +80,8 @@ const menu_item = [
     name:'多媒体',
     sub:[
       {
-        name:'视频预览',
-        component:null
+        name:'视频信息',
+        component:video_info
       },
       {
         name:'图像轮播',

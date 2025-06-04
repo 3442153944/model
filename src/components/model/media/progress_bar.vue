@@ -214,7 +214,7 @@ onUnmounted(() => {
   transform: translate(-50%, -50%);
   transition: all 0.2s ease;
   cursor: grab;
-  z-index: 2;
+  z-index: 100;
 }
 
 .progress-bar.horizontal .thumb {
